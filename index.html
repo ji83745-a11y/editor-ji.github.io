@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ji Li | Video Editor Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <style>
+        body { background-color: #ffffff; color: #1a1a1a; font-family: "Helvetica Neue", Arial, sans-serif; }
+        .video-card:hover .overlay { opacity: 1; }
+    </style>
+</head>
+<body class="p-8 md:p-16">
+
+    <nav class="flex justify-between items-center mb-20">
+        <h1 class="text-2xl font-bold tracking-tighter uppercase">Ji Li</h1>
+        <div class="space-x-6 text-sm uppercase tracking-widest">
+            <a href="#" class="hover:text-gray-500">Work</a>
+            <a href="https://linktr.ee/jili320" target="_blank" class="hover:text-gray-500">Contact</a>
+        </div>
+    </nav>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        
+        <a href="https://www.youtube.com/watch?v=oIodK8z3Y6g" class="glightbox video-card relative block group overflow-hidden bg-gray-100">
+            <img src="https://img.youtube.com/vi/oIodK8z3Y6g/maxresdefault.jpg" class="w-full aspect-video object-cover transition duration-500 group-hover:scale-105">
+            <div class="overlay absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 transition-opacity duration-300">
+                <p class="text-white text-lg font-light tracking-widest uppercase">Australian Dream</p>
+            </div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=视频ID2" class="glightbox video-card relative block group overflow-hidden bg-gray-100">
+            <img src="https://img.youtube.com/vi/视频ID2/maxresdefault.jpg" class="w-full aspect-video object-cover transition duration-500 group-hover:scale-105">
+            <div class="overlay absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 transition-opacity duration-300">
+                <p class="text-white text-lg font-light tracking-widest uppercase">作品名称 02</p>
+            </div>
+        </a>
+
+    </div>
+
+    <footer class="mt-32 text-center text-xs text-gray-400 uppercase tracking-widest">
+        &copy; 2024 Your Name. All Rights Reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({ selector: '.glightbox' });
+    </script>
+</body>
+</html>
